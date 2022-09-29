@@ -1,0 +1,60 @@
+body {
+    background-color: map-get($body,background-color);
+    background-image: map-get($body,background-image);
+}
+.logo {
+   font-family: "Sacramento", cursive;
+   font-size: map-get($logo,font-size);
+}
+.nombre {
+    font-size: map-get($nombre,font-size);
+    font-family: "Dancing Script", cursive;
+    color:map-get($nombre,color);
+    text-align:map-get($nombre,text-align);
+    margin: map-get($nombre,margin);
+}
+.flex-container {
+    display:map-get($flex-container,display);
+    flex-direction: map-get($flex-container,flex-direction);
+    justify-content:map-get($flex-container,justify-content);
+    margin: map-get($flex-container,margin);
+}
+.brochas {
+    border:map-get($brochas,border);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin:map-get($brochas,margin);
+}
+
+@mixin estiloH2 {
+  font-size: 45px;
+  text-align: center;
+  font-family: "Sacramento", cursive;
+  margin: 3%;
+}
+
+.brochas h2 {
+    @include estiloH2();
+}
+@mixin footerH3 {
+    font-size: 60px;
+    font-family: "Sacramento", cursive;
+    color: rgb(100, 109, 99);
+    text-align: center;
+    margin: 4%;
+}
+footer h3 {
+   @include footerH3();
+}
+@mixin flex-containeH2 {
+    background: transparent;
+    text-decoration: none;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    color: rgb(87, 94, 79);
+    margin: 2% 20%;
+    border-radius: 5px;
+    text-align: center;
+}
+.flex-containerH2{
+    @include flex-containeH2();
+}

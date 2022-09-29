@@ -1,0 +1,74 @@
+  /*****************************************************************/
+  /*********************   CUERPO DE PAGINA ***********************/
+  /*****************************************************************/
+body {
+    background-image: $bg-principal;
+    background-color: $bg-secundario;   
+}
+.logo {
+    font-family: $font-style-principal;  
+    font-size: $fs-principal; 
+} 
+.nombre {
+    font-size: $fs-secundario;
+    font-family: $font-style-secundario;
+    color: $fc-principal;
+    text-align: center;
+    margin: 4%;
+}
+.carousel {
+    margin-top: 4%;
+}
+/*****************************************************************/
+/*********************    INDEX     *****************************/
+/*****************************************************************/
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:1% 10%;
+   
+}
+.flex-container {
+    div {
+    a{
+    text-decoration: none;  
+    }
+    }
+    h2 {
+    background: transparent;
+    text-decoration: none;
+    font-family:$font-style-terciario;
+    font-style: oblique;
+    color: $fc-secundario;
+    margin: 2% 20%; 
+    border-radius: 5px;
+    text-align: center; 
+    }
+}
+.box {
+    &:hover {
+    transform:scale(1.1);
+    transition: all 1s;
+    }
+}
+.comentario {
+    text-align: center;
+    font-family: $font-style-secundario;
+    margin: 6% 25%;
+    font-size: $fs-terciario;
+    color: $fc-sextenario;
+}
+.comentarioParte {
+    text-align: center;
+    font-family: $font-style-principal;
+}
+.dos {
+    background-color: transparent;
+    border-radius: none;
+    border-style: none;
+    a{
+    text-decoration:underline;
+    color: $fc-sextenario;
+    }
+} 

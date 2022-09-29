@@ -1,0 +1,78 @@
+/*****************************************************************/
+/*********************      BLOG      *****************************/
+/*****************************************************************/
+.brochas {
+    border: 3px solid rgb(255, 76, 207);
+    font-family: $font-style-terciario;
+    margin: 3% 10%;
+}
+.brochas {
+    h2 {
+    font-size: $fs-quinario;
+    text-align: center;
+    font-family: $font-style-principal;
+    margin: 3%;
+    }
+    section {
+    display: flex;
+    justify-content: space-around;
+    }
+}
+.limpieza {
+    ul {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    font-size: $fs-sextenario;
+    color: $fc-cuartenario;
+    }
+}
+.fotoOcultaDesktop {
+    display: none;
+}
+/*****************************************************************/
+/*********************    SOBRE MI   *****************************/
+/*****************************************************************/
+
+.cuatroPartes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: $bg-terciario;
+    color: $fc-terciario;
+    margin:12%;
+}
+.texto {
+    font-size: $fs-cuarternario;
+    font-family: $font-style-terciario;
+    text-align: center;
+    margin:17% 9% 20% 20%;
+  }
+.imagen, .imagenOcultaMobile {
+    align-items: center;
+}
+/*****************************************************************/
+/*********************   CONTACTO  *******************************/
+/*****************************************************************/
+.enviarMensaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img-fluid {
+    margin-left: 28%;  
+}
+.enviar {
+    background: transparent;
+    border: none;
+    margin: 0% 0% 3% 48%;
+    a {
+    text-decoration: none;
+    color: $fc-principal;
+    font-size: $fs-cuarternario;
+    font-family: $font-style-secundario;
+    }
+}
+.Mobile {
+    display: none;
+}

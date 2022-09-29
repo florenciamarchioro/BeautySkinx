@@ -1,83 +1,126 @@
-* {
-  padding: 0;
-  margin: 0;
-   
+.cuatroPartes, .flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
+.enviarMensaje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imagenOcultaMobile, .imagen {
+  align-items: center;
+}
 
 /*****************************************************************/
 /*********************   CUERPO DE PAGINA ***********************/
 /*****************************************************************/
-
 body {
-  background-color: #FBDA61;
   background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+  background-color: #FBDA61;
 }
+
 .logo {
-  font-family: 'Sacramento', cursive;  
-  font-size: 40px; 
+  font-family: "Sacramento", cursive;
+  font-size: 40px;
 }
 
-
-/*****************************************************************/
-/*********************    INDEX     *****************************/
-/*****************************************************************/
-
-.carousel {
-  margin-top: 4%;
-}
 .nombre {
   font-size: 90px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   color: #000;
   text-align: center;
   margin: 4%;
 }
-.flex-container h2 {
-  background: transparent;
-  text-decoration: none;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
-  Geneva, Verdana, sans-serif ;
-  font-style: oblique;
-  color: rgb(87, 94, 79);
-  margin: 2% 20%; 
-  border-radius: 5px;
-  text-align: center; 
+
+.carousel {
+  margin-top: 4%;
 }
-.flex-container div a {
-  text-decoration: none; 
-}
+
+/*****************************************************************/
+/*********************    INDEX     *****************************/
+/*****************************************************************/
 .flex-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin:1% 10%;
-
+  margin: 1% 10%;
 }
+
+.flex-container div a {
+  text-decoration: none;
+}
+.flex-container h2 {
+  background: transparent;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: oblique;
+  color: rgb(87, 94, 79);
+  margin: 2% 20%;
+  border-radius: 5px;
+  text-align: center;
+}
+
 .box:hover {
-  transform:scale(1.1);
+  transform: scale(1.1);
   transition: all 1s;
 }
+
 .comentario {
   text-align: center;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   margin: 6% 25%;
   font-size: 35px;
   color: rgb(95, 111, 99);
-  
 }
+
 .comentarioParte {
   text-align: center;
-  font-family: 'Sacramento', cursive;
+  font-family: "Sacramento", cursive;
 }
-.dos{
+
+.dos {
   background-color: transparent;
   border-radius: none;
   border-style: none;
 }
 .dos a {
-  text-decoration:underline;
+  text-decoration: underline;
   color: rgb(95, 111, 99);
+}
+
+/*****************************************************************/
+/*********************      BLOG      *****************************/
+/*****************************************************************/
+.brochas {
+  border: 3px solid rgb(255, 76, 207);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 3% 10%;
+}
+
+.brochas h2 {
+  font-size: 45px;
+  text-align: center;
+  font-family: "Sacramento", cursive;
+  margin: 3%;
+}
+.brochas section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.limpieza ul {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  font-size: 19px;
+  color: rgb(58, 75, 58);
+}
+
+.fotoOcultaDesktop {
+  display: none;
 }
 
 /*****************************************************************/
@@ -88,63 +131,34 @@ body {
   flex-direction: row;
   justify-content: space-around;
   background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
-  color:rgb(97, 114, 97);
-  margin:12%;
+  color: rgb(97, 114, 97);
+  margin: 12%;
 }
+
 .texto {
-  font-size:30px;
-  font-family: 'Dancing Script', 'cursive';
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
-  margin:17% 9% 20% 20%;
+  margin: 17% 9% 20% 20%;
 }
+
 .imagen, .imagenOcultaMobile {
   align-items: center;
-}
-
-
-/*****************************************************************/
-/*********************      BLOG      *****************************/
-/*****************************************************************/
-
-.brochas {
-  border: 3px solid rgb(255, 76, 207);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular',
-  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin: 3% 10%;
-}
-.brochas h2 {
-  font-size: 45px;
-  text-align: center;
-  font-family: 'Sacramento', 'cursive';
-  margin: 3%;
-}
-.brochas section {
-  display: flex;
-  justify-content: space-around;
-}
-.limpieza ul {
-  display: flex;
-  flex-direction: column;
-  margin: 2%;
-  font-size: 19px;
-  color: rgb(58, 75, 58);
-}
-.fotoOcultaDesktop {
-  display: none;
 }
 
 /*****************************************************************/
 /*********************   CONTACTO  *******************************/
 /*****************************************************************/
-
 .enviarMensaje {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .img-fluid {
-  margin-left: 28%;  
+  margin-left: 28%;
 }
+
 .enviar {
   background: transparent;
   border: none;
@@ -154,8 +168,9 @@ body {
   text-decoration: none;
   color: #000;
   font-size: 30px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
+
 .Mobile {
   display: none;
 }
@@ -163,14 +178,14 @@ body {
 /*****************************************************************/
 /*********************      FOOTER    ****************************/
 /*****************************************************************/
-
 footer h3 {
   font-size: 60px;
-  font-family: 'Sacramento', cursive;
-  color:  rgb(100, 109, 99);
+  font-family: "Sacramento", cursive;
+  color: rgb(100, 109, 99);
   text-align: center;
   margin: 4%;
 }
+
 .formularioUno {
   display: flex;
   flex-direction: column;
@@ -178,40 +193,38 @@ footer h3 {
   border: none;
   box-shadow: none;
   text-align: center;
-  margin:2%; 
+  margin: 2%;
 }
 .formularioUno input {
   width: 850px;
 }
-.map-responsive{
-  overflow:hidden;
-  padding-bottom:11%;
-  position:relative;
-  
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 11%;
+  position: relative;
 }
-.map-responsive iframe{
-  height:150px;
+.map-responsive iframe {
+  height: 150px;
   width: 1920px;
-  position:absolute;
+  position: absolute;
 }
 
 /*****************************************************************/
 /*********************         MEDIA          ********************/
 /*****************************************************************/
-
 @media screen and (max-width: 480px) {
-
   /**************** INDEX ****************/
   .carousel {
     margin-top: 17% !important;
   }
-  .flex-container{
+  .flex-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 1% 1% 5% 5% !important;
   }
-  .imagenResponsive, .imagenDos{
+  .imagenResponsive, .imagenDos {
     text-align: center;
     max-width: 400px;
     max-height: 300px;
@@ -219,31 +232,30 @@ footer h3 {
   }
   .comentario {
     font-size: 30px;
-    margin:0% 10% 0% 10%;
+    margin: 0% 10% 0% 10%;
   }
   .dos {
     border-style: none;
   }
   .dos a {
-    margin:10px;
+    margin: 10px;
   }
   .formularioUno input {
     max-width: 450px;
   }
-
- /************** SOBRE MI *************/
+  /************** SOBRE MI *************/
   .cuatroPartes {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin:5% 5% 5% 5%;
+    margin: 5% 5% 5% 5%;
     width: 440px !important;
   }
   .texto {
     font-size: 27px;
-    margin:5% 5% 5% 5%;
+    margin: 5% 5% 5% 5%;
   }
-  .imagen{
+  .imagen {
     display: flex;
     margin: 4%;
   }
@@ -251,7 +263,6 @@ footer h3 {
     display: flex;
     justify-content: center;
   }
-
   /************** Blog ****************/
   .brohas {
     margin: 1% 1% 1% 1%;
@@ -262,7 +273,7 @@ footer h3 {
     justify-content: center;
   }
   .imagenOcultaMobile {
-    display: none !important ;
+    display: none !important;
   }
   .fotoOcultaDesktop {
     display: flex;
@@ -274,7 +285,6 @@ footer h3 {
   .imagenDos {
     max-width: 380px;
   }
-
   /*********** CONTACTO *************/
   .enviarMensaje {
     display: flex;
@@ -284,22 +294,17 @@ footer h3 {
   .desktop {
     display: none;
   }
- .Mobile {
-   display: flex;
-   margin-right: 35%;
+  .Mobile {
+    display: flex;
+    margin-right: 35%;
   }
-
   /************ FOOTER **********/
- .map-responsive{
+  .map-responsive {
     display: flex;
     justify-content: center;
-   
   }
 }
-
-
 @media screen and (max-width: 720px) {
-
   /************** INDEX ***************/
   .carousel {
     margin-top: 12%;
@@ -319,77 +324,74 @@ footer h3 {
   .nombre {
     margin: 8%;
   }
+  /***************** SOBRE MI ****************/
+  .cuatroPartes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 550px;
+    text-align: center;
+  }
+  .fotoOcultaDesktop {
+    display: flex;
+  }
+  .imagenOcultaMobile {
+    display: none;
+  }
+  .imagenResponsive {
+    object-fit: fill;
+    width: 550px;
+  }
+  .texto {
+    text-align: center;
+    margin: 5% 5% 5% 5%;
+  }
+  /******************* BLOG ******************/
+  .blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .limpieza {
+    margin: 2% 2% 3% 3%;
+  }
+  .imagenDos {
+    width: 570px;
+  }
+  /***************** GALERIA ****************/
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    margin: 11%;
+  }
+  /***************** CONTACTO ****************/
+  .enviarMensaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .formularioUno {
+    height: fit-content;
+    width: auto;
+    justify-content: center;
+    margin: 5%;
+  }
+  .formularioUno input {
+    width: 600px;
+    justify-content: center;
+  }
+  .Mobile {
+    display: flex;
+    margin-right: 35%;
+  }
+  .desktop {
+    display: none;
+  }
+  /***************** FOOTER ****************/
+  .map-responsive iframe {
+    display: flex;
+    justify-content: center;
+  }
+}
 
-/***************** SOBRE MI ****************/
-.cuatroPartes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 550px;
-  text-align: center;  
-}
-.fotoOcultaDesktop {
-  display: flex;
-}
-.imagenOcultaMobile{
-  display: none;
-}
-.imagenResponsive {
-  object-fit: fill;
-  width: 550px;
-}
-.texto {
-  text-align: center;
-  margin:5% 5% 5% 5%; 
-}
-
-/******************* BLOG ******************/
-.blog {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.limpieza {
-  margin: 2% 2% 3% 3%;
-}
-.imagenDos {
-  width: 570px;
-}
-
-/***************** GALERIA ****************/
-.flex-container {
-  display: flex;
-  justify-content: center;
-  margin: 11%;
-}
-
-/***************** CONTACTO ****************/
-.enviarMensaje {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.formularioUno {
-  height: fit-content;
-  width: auto;
-  justify-content: center;
-  margin: 5%;     
-}
-.formularioUno input {
-  width: 600px;
-  justify-content: center; 
-}
-.Mobile {
-  display: flex;
-  margin-right: 35%;
- }
- .desktop {
-  display: none;
- }
-
-/***************** FOOTER ****************/
-.map-responsive iframe {
-  display: flex;
-  justify-content: center;
-}
-}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,33 @@
+%disposicion-uno {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+%disposicion-dos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.flex-container {
+    @extend %disposicion-dos;
+}
+.cuatroPartes {
+    @extend %disposicion-dos;
+}
+%disposicion-tres {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.enviarMensaje {
+    @extend %disposicion-tres;
+}
+%alineado {
+    align-items: center;
+}
+.imagen {
+    @extend %alineado;
+}
+.imagenOcultaMobile {
+    @extend %alineado;
+}
