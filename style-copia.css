@@ -130,7 +130,21 @@
   .fotoOcultaDesktop {
     display: none;
   }
+  /*****************************************************************/
+  /*********************    GALERIA    *****************************/
+  /*****************************************************************/
   
+  .video {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    justify-items: center;
+    margin: 5%;
+  }
+  .video iframe {
+    width: 560px;
+    height: 315px;
+  }
   /*****************************************************************/
   /*********************   CONTACTO  *******************************/
   /*****************************************************************/
@@ -249,7 +263,19 @@
       display: flex;
       justify-content: center;
     }
-  
+    
+    /************** Galeria ****************/
+    .video {
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+    }
+    .video iframe {
+     max-width: 430px;
+     max-height: 315px;
+     margin-top: 2%;
+    }
+
     /************** Blog ****************/
     .brohas {
       margin: 1% 1% 1% 1%;
@@ -339,6 +365,18 @@
   .texto {
     text-align: center;
     margin:5% 5% 5% 5%; 
+  }
+  /************** Galeria ****************/
+  .video {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+  }
+  .video iframe {
+    max-width: 5600px;
+    max-height: 315px;
+    margin: 9%;
+
   }
   
   /******************* BLOG ******************/
