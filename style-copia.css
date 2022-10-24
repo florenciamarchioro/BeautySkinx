@@ -22,36 +22,19 @@
   /*****************************************************************/
   /*********************    INDEX     *****************************/
   /*****************************************************************/
-  
   .carousel {
     margin-top: 4%;
   }
-  .nombre {
+  .nombre  {
     font-size: 90px;
     font-family: 'Dancing Script', cursive;
     color: #000;
     text-align: center;
     margin: 4%;
   }
-  .flex-container h2 {
-    background: transparent;
-    text-decoration: none;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
-    Geneva, Verdana, sans-serif ;
-    font-style: oblique;
-    color: rgb(87, 94, 79);
-    margin: 2% 20%; 
-    border-radius: 5px;
-    text-align: center; 
-  }
-  .flex-container div a {
-    text-decoration: none; 
-  }
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin:1% 10%;
+  #nav-btn {
+  background-color: #FF5ACD;
+  color: #000;
   }
   .box:hover {
     transform:scale(1.1);
@@ -61,140 +44,72 @@
     text-align: center;
     font-family: 'Dancing Script', cursive;
     margin: 6% 25%;
+    font-size: 40px;
+    color: rgb(95, 111, 99); 
+  }
+  .btn a{
     font-size: 35px;
     color: rgb(95, 111, 99);
   }
-  .comentarioParte {
-    text-align: center;
-    font-family: 'Sacramento', cursive;
-  }
-  .dos{
-    background-color: transparent;
-    border-radius: none;
-    border-style: none;
-  }
-  .dos a {
-    text-decoration:underline;
-    color: rgb(95, 111, 99);
-  }
-  
   /*****************************************************************/
   /*********************    SOBRE MI   *****************************/
   /*****************************************************************/
-  .cuatroPartes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
-    color:rgb(97, 114, 97);
-    margin:12%;
-  }
-  .texto {
-    font-size:30px;
-    font-family: 'Dancing Script', 'cursive';
-    text-align: center;
-    margin:17% 9% 20% 20%;
-  }
-  .imagen, .imagenOcultaMobile {
+  #parte{
+    background-color: aliceblue;
+    margin: 11%;
     align-items: center;
   }
-  
-  
+  .texto{
+    margin: 10% 14% 10% 14%;
+    text-align: center;
+    font-family:  'Dancing Script', cursive;;
+    font-size: 35px;
+    color: rgb(95, 111, 99);
+  }
   /*****************************************************************/
   /*********************      BLOG      *****************************/
   /*****************************************************************/
-  
-  .brochas {
-    border: 3px solid rgb(255, 76, 207);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular',
-    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 3% 10%;
-  }
-  .brochas h2 {
+  h2 {
     font-size: 45px;
     text-align: center;
     font-family: 'Sacramento', 'cursive';
     margin: 3%;
   }
-  .brochas section {
-    display: flex;
-    justify-content: space-around;
+  .textoDos {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
   }
-  .limpieza ul {
-    display: flex;
-    flex-direction: column;
-    margin: 2%;
-    font-size: 19px;
-    color: rgb(58, 75, 58);
+  #blog {
+    margin: 11%;
+    border-style:groove;
+    border-color: #FF5ACD;
   }
-  .fotoOcultaDesktop {
-    display: none;
-  }
+ 
   /*****************************************************************/
-  /*********************    GALERIA    *****************************/
+  /*********************    GALERIA   *****************************/
   /*****************************************************************/
-  
-  .video {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    justify-items: center;
-    margin: 5%;
-  }
-  .video iframe {
-    width: 560px;
-    height: 315px;
+  .titulo {
+    font-size: 90px;
+    font-family: 'Dancing Script', cursive;
+    color: #000;
+    text-align: center;
+    margin: 2% 4% 2% 0%;
   }
   /*****************************************************************/
   /*********************   CONTACTO  *******************************/
   /*****************************************************************/
-  
-  .enviarMensaje {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .img-fluid {
-    margin-left: 28%;  
-  }
-  .enviar {
-    background: transparent;
-    border: none;
-    margin: 0% 0% 3% 48%;
-  }
-  .enviar a {
-    text-decoration: none;
-    color: #000;
-    font-size: 30px;
-    font-family: 'Dancing Script', cursive;
-  }
-  .Mobile {
-    display: none;
+  .imgContacto {
+    align-items: center;
+    width: 195%;
+    margin-bottom: 30%;
   }
   
   /*****************************************************************/
   /*********************      FOOTER    ****************************/
   /*****************************************************************/
-  
-  footer h3 {
-    font-size: 60px;
-    font-family: 'Sacramento', cursive;
-    color:  rgb(100, 109, 99);
-    text-align: center;
-    margin: 4%;
-  }
-  .formularioUno {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: none;
-    box-shadow: none;
-    text-align: center;
-    margin:2%; 
-  }
-  .formularioUno input {
-    width: 850px;
-  }
+ 
   .map-responsive{
     overflow:hidden;
     padding-bottom:11%;
@@ -211,128 +126,11 @@
   /*********************         MEDIA          ********************/
   /*****************************************************************/
   
-  @media screen and (max-width: 480px) {
-  
-    /**************** INDEX ****************/
-    .carousel {
-      margin-top: 17% !important;
-    }
-    .flex-container{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 1% 1% 5% 5% !important;
-    }
-    .imagenResponsive, .imagenDos{
-      text-align: center;
-      max-width: 400px;
-      max-height: 300px;
-      margin: 3% 0% 10% 0%;
-    }
-    .comentario {
-      font-size: 30px;
-      margin:0% 10% 0% 10%;
-    }
-    .dos {
-      border-style: none;
-    }
-    .dos a {
-      margin:10px;
-    }
-    .formularioUno input {
-      max-width: 450px;
-    }
-  
-   /************** SOBRE MI *************/
-    .cuatroPartes {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin:5% 5% 5% 5%;
-      width: 440px !important;
-    }
-    .texto {
-      font-size: 27px;
-      margin:5% 5% 5% 5%;
-    }
-    .imagen{
-      display: flex;
-      margin: 4%;
-    }
-    .fotoOcultaDesktop {
-      display: flex;
-      justify-content: center;
-    }
-    
-    /************** Galeria ****************/
-    .video {
-      display: flex;
-      flex-direction: column;
-      justify-content:center;
-    }
-    .video iframe {
-     max-width: 430px;
-     max-height: 315px;
-     margin-top: 2%;
-    }
-
-    /************** Blog ****************/
-    .brohas {
-      margin: 1% 1% 1% 1%;
-    }
-    .blog {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .imagenOcultaMobile {
-      display: none !important ;
-    }
-    .fotoOcultaDesktop {
-      display: flex;
-    }
-    .foto {
-      display: flex;
-      justify-content: center;
-    }
-    .imagenDos {
-      max-width: 380px;
-    }
-  
-    /*********** CONTACTO *************/
-    .enviarMensaje {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .desktop {
-      display: none;
-    }
-   .Mobile {
-     display: flex;
-     margin-right: 35%;
-    }
-  
-    /************ FOOTER **********/
-   .map-responsive{
-      display: flex;
-      justify-content: center;
-     
-    }
-  }
-  
-  
   @media screen and (max-width: 720px) {
   
     /************** INDEX ***************/
     .carousel {
-      margin-top: 12%;
-    }
-    .flex-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 5% 0% 0% 15%;
+      margin-top: 17% !important;
     }
     .box {
       margin: 3%;
@@ -343,89 +141,29 @@
     .nombre {
       margin: 8%;
     }
-  
-  /***************** SOBRE MI ****************/
-  .cuatroPartes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 550px;
-    text-align: center;  
-  }
-  .fotoOcultaDesktop {
-    display: flex;
-  }
-  .imagenOcultaMobile{
-    display: none;
-  }
-  .imagenResponsive {
-    object-fit: fill;
-    width: 550px;
-  }
-  .texto {
-    text-align: center;
-    margin:5% 5% 5% 5%; 
-  }
-  /************** Galeria ****************/
-  .video {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-  }
-  .video iframe {
-    max-width: 5600px;
-    max-height: 315px;
-    margin: 9%;
-
-  }
-  
-  /******************* BLOG ******************/
-  .blog {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .limpieza {
-    margin: 2% 2% 3% 3%;
-  }
-  .imagenDos {
-    width: 570px;
-  }
-  
-  /***************** GALERIA ****************/
-  .flex-container {
-    display: flex;
-    justify-content: center;
-    margin: 11%;
-  }
-  
-  /***************** CONTACTO ****************/
-  .enviarMensaje {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .formularioUno {
-    height: fit-content;
-    width: auto;
-    justify-content: center;
-    margin: 5%;     
-  }
-  .formularioUno input {
-    width: 600px;
-    justify-content: center; 
-  }
-  .Mobile {
-    display: flex;
-    margin-right: 35%;
-   }
-   .desktop {
-    display: none;
-   }
-  
   /***************** FOOTER ****************/
   .map-responsive iframe {
     display: flex;
     justify-content: center;
   }
   }
+
+  @media screen and (max-width: 480px) {
+  
+    /**************** INDEX ****************/
+    .carousel {
+      margin-top: 17% !important;
+    }
+    .comentario {
+      font-size: 30px;
+      margin:0% 10% 0% 10%;
+    }
+    /************ FOOTER **********/
+   .map-responsive{
+      display: flex;
+      justify-content: center;
+     
+    }
+  }
+  
+  
